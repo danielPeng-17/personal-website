@@ -1,0 +1,47 @@
+.easeInWrapper{
+    position: relative;
+    overflow: hidden;
+    transform: translateY(-15%);
+    -webkit-transform: translateY(-15%);
+    margin: 0 auto;
+}
+
+.slide-down {
+    z-index: 10;
+    animation: slide-down 0.9s forwards;
+    -webkit-animation: slide-down 0.9s forwards;
+}
+
+@keyframes slide-down {
+    100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-down {
+    100% { -webkit-transform: translateY(0%); }
+}
+
+.transparentBox{
+    background-color: rgba(244, 244, 244, 0.2);
+    margin: 3% 13%;
+    padding: 1% 1% 0.20% 1%;
+    box-sizing: border-box;
+    color: white;
+    position: grid;
+    text-align: center;
+    margin: 0 8%;
+    display: grid;
+}
+
+.email{
+    font-size: calc(13px + 2vmin);
+    font-weight: 400;
+    margin: auto;
+    font-family: 'oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+
+@media screen and (max-width: 575.98px){
+    .easeInWrapper{
+        margin: 4% auto 0
+    }
+}

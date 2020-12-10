@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from './views/home';
+import AboutMe from './views/aboutMe';
+import Projects from './views/projects';
+// import Contact from './views/contact';
+import Sidebar from './components/Sidebar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Fragment>
+        <Router>
+          <Sidebar /> 
+          <Switch>
+            <Route path={process.env.PUBLIC_URL + '/'} exact component={Home} />
+            <Route path={process.env.PUBLIC_URL + '/aboutMe'} exact component={AboutMe} />
+            <Route path={process.env.PUBLIC_URL + "/projects"} exact component={Projects} />
+            {/* <Route path={process.env.PUBLIC_URL + "/contact"} exact component={Contact} /> */}
+          </Switch> 
+        </Router>
+      </Fragment>
+    );
+  }
 }
 
 export default App;

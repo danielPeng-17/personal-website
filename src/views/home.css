@@ -1,0 +1,56 @@
+.background{
+    background-image: url('../assets/images/mountains-background.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.me{
+    width: 40vmin;
+    border-radius: 50%;
+    filter: brightness(90%);
+    z-index: 10;
+    margin-top: calc((100vh - (42vmin + 2em)) / 5.5);
+}
+
+.intro{
+    font-size: calc(2em + 5vmin);
+    margin: 2% 0 1%;
+    color: white;
+}
+
+@media screen and (max-width: 991.98px){
+    .me{
+        width: 43vmin
+    }
+
+    .intro{
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 767.98px){
+    .me{
+        width: 47vmin;
+    }
+
+    .intro{
+        font-size: calc(2em + 6vmin);
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    .me{
+        width: 53vmin;
+        margin-bottom: 5%;
+    }
+
+    .intro{
+        font-size: calc(2em + 6vmin);
+        margin-bottom: 7%;
+    }
+}

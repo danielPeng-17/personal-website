@@ -1,0 +1,37 @@
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+#btn{
+    border: 1.5px solid;
+    border-radius: 2px;
+    padding: .7% 1.1%;
+    margin: 2% 1.5%;
+    font-size: 3vmin;
+    font-weight: 500;
+}
+
+#btn:hover{
+    background-color: rgba(244, 244, 244, 0.4);
+}
+
+.tip{
+    margin-bottom: 5px;
+}
+
+.icon{
+    font-size: 1.75rem;
+}
+
+
+@media screen and (max-width: 575.98px){
+    #btn{
+        padding: 2.5% 2.3%;
+        margin: auto 15px;
+    }
+
+    .icon{
+        font-size: 2.2rem;
+    }
+}

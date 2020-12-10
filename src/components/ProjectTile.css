@@ -1,0 +1,80 @@
+.project-box{
+    width: 100%;
+    height: 30%;
+    border: lightgray 1px solid;
+    box-shadow: 5px 5px rgba(211, 211, 211, 0.4);
+    margin-bottom: 3%;
+    padding: 5px 2px;
+}
+
+.project-img{
+    max-width: 40%;
+    max-height: 30%;
+    margin: 1%;
+}
+
+.right-project-box{
+    width: 58%;
+    float: right;
+    padding: 1% 2%;
+}
+
+.btn{
+    border-radius: 2px;
+    border: 1.2px solid;
+}
+
+.code-btn{
+    margin-left: 10px
+}
+
+@media screen and (max-width: 991.98px){
+    .project-box{
+        height: auto;
+        display: grid;
+        text-align: center;
+        padding: 7px 2px;
+    }
+
+    .project-img{
+        max-width: 80%;
+        margin: 1% auto;
+    }
+
+    .right-project-box{
+        float: none;
+        text-align: center;
+        margin: 1% auto;
+        width: 100%;
+    }
+
+    .description{
+        text-align: left;
+        margin: 0 2% 2%;
+    }
+
+}
+
+@media screen and (max-width: 767.98px){
+    .project-box{
+        padding: 8px 2px;
+    }
+
+    .project-img{
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    .project-box{
+        padding: 10px 2px;
+    }
+
+    .project-img{
+        max-width: 90%;
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+}
