@@ -1,9 +1,9 @@
 import React, { Fragment, Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './views/home';
-import AboutMe from './views/aboutMe';
-import Projects from './views/projects';
+import Home from './views/homeScreen/home';
+import AboutMe from './views/aboutMeScreen/aboutMe';
+import Projects from './views/projectsScreen/projects';
 // import Contact from './views/contact';
 import Sidebar from './components/Sidebar';
 

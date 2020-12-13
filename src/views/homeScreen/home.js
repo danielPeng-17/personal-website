@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import ContactButtons from '../components/ContactButtons';
-import me from '../assets/images/dpeng.jpg';
+import ContactButtons from '../../components/ContactButtons';
+import me from '../../assets/images/dpeng.jpg';
 import './home.css';
 
 export default function Home() {
